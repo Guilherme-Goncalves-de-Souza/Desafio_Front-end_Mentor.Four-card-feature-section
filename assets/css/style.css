@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 98%);
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+
+    width: 100vw;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 80px;
+}
+
+p{
+    color: hsl(229, 6%, 66%);
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1{
+    font-weight: 200;
+    width: 500px;
+    text-align: center;
+
+    margin-top: 70px;
+    margin-bottom: 20px;
+
+    color: rgb(79,80,99);
+}
+
+header p{
+    text-align: center;
+    width: 520px;
+
+    margin-bottom: 50px;
+}
+
+.container{
+    width: 350px;
+    height: 245px;
+
+    padding: 30px;
+
+    border-radius: 5px;
+
+    background-color: white;
+    box-shadow: 0px 15px 30px rgb(223,233,241);
+}
+
+.container h2{
+    margin-bottom: 15px;
+    color: rgb(79,80,99);
+}
+
+.container p{
+    line-height: 25px;
+    font-size: 13.5px;
+}
+
+.container img{
+    
+    position: relative;
+
+    left: 226px;
+    bottom: -25px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+
+    height: 531px;
+}
+
+.supervisor{
+    border-top: 5px solid hsl(180, 62%, 55%);
+    border-radius: 10px;
+}
+
+.teamB{
+    border-top: 5px solid hsl(0, 78%, 62%);
+    border-radius: 10px;
+
+    align-self: flex-start;
+    position: absolute;
+}
+
+.karma{
+    border-top: 5px solid hsl(34, 97%, 64%);
+    border-radius: 10px;
+
+    align-self: flex-end;
+}
+
+.calculator{
+    border-top: 5px solid hsl(212, 86%, 64%);
+    border-radius: 10px;
+}
+
+@media(max-width: 1180px){
+    main{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .teamB{
+        align-self: initial;
+        position: initial;
+    }
+
+    .karma{
+        align-self: initial;
+    }
+}
+
+@media(max-width: 535px){
+    header h1{
+        font-size: 25px;
+        width: 400px;
+    }
+
+    header p{
+        width: 300px;
+    }
+}
+
+@media(max-width: 350px){
+    header h1{
+        font-size: 24.5px;
+        width: 300px;
+    }
+
+    .container{
+        width: 280px;
+    }
+
+    .container img{
+        left: 160px;
+    }
+}
